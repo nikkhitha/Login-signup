@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="tit34.css">
+</head>
+<body>
+    
+    <!---------------------------------------Header------------------------>
+    <header class="header">
+        <div class="navbar">
+            <a href="#" class="navlogo">Sky zone</a>
+            <ul class="navitems">
+                <li class="navitem">
+                    <a href="#" class="navlink">Home</a>
+                    <a href="#" class="navlink">Timings</a>
+                    <a href="#" class="navlink">Services</a>
+                    <a href="#" class="navlink">Contact</a>
+                </li>
+            </ul>
+            <button class="btn" id="formopen">Login</button>
+        </div>
+    </header>
+
+    <!--------------------------------------Home---------------------------->
+    <section class="home">
+    <div class="formcontainer">
+        <i class="uil uil-times formclose"></i>
+        <!----------Login From------->
+        <div class="formloginform">
+            <form action="#">
+                <h2>Login</h2>
+                <div class="inputbox">
+                    <input type="email" placeholder="Enter Your Mail" required>
+                    <i class="uil uil-envelope-alt email"></i>
+                </div>
+                <div class="inputbox">
+                    <input type="password" placeholder="Enter Password" required>
+                    <i class="uil uil-lock password"></i>
+                    <i class="uil uil-eye-slash pwhide"></i>
+                </div>
+                <div class="optionfield">
+                    <span class="checkbox">
+                        <input type="checkbox">
+                        <label for="check">Remember Me</label>
+                    </span>
+                    <a href="#" class="forgotpw">Forgot Password?</a>
+                </div>
+                <button class="button">Login Now</button>
+                <div class="loginsignup">
+                    Don't have have an account? <a href="#" id="signup">Signup</a>
+                </div>
+            </form>
+        </div>
+
+
+        <!------------------------Signup-------------->
+        <div class="formsignupform">
+            <form action="#">
+                <h2>SignUp</h2>
+                <div class="inputbox">
+                    <input type="email" placeholder="Enter Your Mail" required>
+                    <i class="uil uil-envelope-alt email"></i>
+                </div>
+                <div class="inputbox">
+                    <input type="password" placeholder="Enter your Password" required>
+                    <i class="uil uil-lock password"></i>
+                    <i class="uil uil-eye-slash pwhide"></i>
+                </div>
+                <div class="inputbox">
+                    <input type="password" placeholder="Confirm Password" required>
+                    <i class="uil uil-lock password"></i>
+                    <i class="uil uil-eye-slash pwhide"></i>
+                </div>
+                
+                <button class="button">SignUp Now</button>
+                <div class="loginsignup">
+                    Already have an account? <a href="#" id="login">Login</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+</section>
+    <script src="tit34.js"></script>
+</body>
+</html>

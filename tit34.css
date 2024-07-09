@@ -1,0 +1,198 @@
+*{
+    margin:0;
+    padding:0;
+}
+.header{
+    position:fixed;
+    height:80px;
+    width:100%;
+    z-index: 100;
+    padding:0 25px;
+}
+a{
+    text-decoration: none;
+}
+.navbar{
+    max-width:1100px;
+    width:100%;
+    margin:0 auto;
+}
+.navbar,.navitem{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    height:100%;
+}
+.navitem{
+    column-gap: 25px;
+}
+.navlogo, .navlink,.btn{
+    color:white;
+}
+.navlogo{
+    font-size: 25px;
+}
+.navlink:hover{
+    color:#d9d9d9;
+}
+.btn{
+    padding:10px 25px;
+    border:2px solid #ffff;
+    background: transparent;
+    border-radius:6px;
+    cursor:pointer;
+}
+.btn:active{
+    transform:scale(0.98);
+}
+
+/**********************home*************************/
+.home{
+    position:relative;
+    height:100vh;
+    width:100%;
+    background-image: url("index/images/flyzone.avif");
+    background-size: cover;
+    background-position: center;
+}
+.home::before{
+    content:"";
+    position:absolute;
+    height:100%;
+    width:100%;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 100;
+    opacity:0;
+    pointer-events: none;
+    transition:All 0.5s ease-out;
+}
+.home.show{
+    opacity:1;
+    pointer-events:auto;
+}
+.formcontainer{
+    position:fixed;
+    top:50%;
+    left:50%;
+    max-width:320px;
+    width:100%;
+    transform:translate(-50%,-50%) scale(1.2);
+    z-index: 101;
+    background-color: #ffff;
+    padding:25px;
+    border-radius: 12px;
+    box-shadow: rgba(0,0,0,0.1);
+    opacity:0;
+    pointer-events: none;
+    transition:all 0.4s ease-out;
+}
+.home.show .formcontainer{
+    opacity:1;
+    pointer-events:auto;
+    transform:translate(-50%,-50%) scale(1);
+}
+.formsignupform{
+    display:none;
+}
+.formcontainer.active .formsignupform{
+    display:block;
+}
+.formcontainer.active .formloginform{
+    display:none;
+}
+.formclose{
+    position:absolute;
+    top:10px;
+    right:10px;
+    color:#0b0217;
+    font-size:27px;
+    opacity:0.9;
+    cursor:pointer;
+}
+.formcontainer h2{
+    font-size:22px;
+    font-weight: 900;
+    color:#0b0217;
+    text-align: center;
+}
+.inputbox{
+    position:relative;
+    margin-top:30px;
+    width:100%;
+    height:40px;
+}
+.inputbox input{
+    height:100%;
+    width:90%;
+    border:none;
+    outline:none;
+    border-bottom: 1.5px solid #aaaaaa;
+    padding-left:30px;
+}
+.inputbox input:focus{
+    border-color:#7d2ae8;
+}
+.inputbox i{
+    position:absolute;
+    top:20%;
+    transform:translate(-50%);
+    font-size: 20px;
+}
+.inputbox i.email, .inputbox i.password{
+    left:5px;
+    color:#707070;
+    cursor:pointer;
+}
+.inputbox input:focus ~ i.email, .inputbox input:focus ~i.pwhide{
+    color:#7d2ae8;
+}
+.inputbox i.pwhide{
+    right:0;
+    color:#707070;
+    cursor:pointer;
+}
+.optionfield{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top:14px;
+}
+.formcontainer a{
+    color:#7d2ae8;
+}
+.formcontainer a:hover{
+    text-decoration: underline;
+}
+.checkbox{
+    display:flex;
+    white-space: nowrap;
+}
+.checkbox label{
+    margin-left:10px;
+}
+.checkbox input{
+    accent-color:#7d2ae8;
+}
+.button{
+    margin:40px 0 20px 0;
+    height:40px;
+    width:80px;
+    cursor:pointer;
+    background-color: #7d2ae8;
+    color:white;
+    width:100%;
+    border:0;
+    outline:none;
+    padding:10px 20px;
+    border-radius:10px;
+    font-size: 17px;
+}
+.loginsignup{
+    font-size: 16px;
+    text-align: center;
+}
+
+/*************888signup form*******************/
+.formsignupform{
+    display:none;
+}
